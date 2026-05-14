@@ -1,58 +1,55 @@
 # Oasis SaaS
 
-A SaaS platform built on the Oasis brand — extending the Oasis help desk into a full subscription product.
+A SaaS platform that scales the Oasis help desk into a multi-client subscription product.
 
-## Overview
+## Problem
 
-Oasis SaaS is the product layer on top of the Oasis help desk system. It wraps the knowledgebase and support features in a multi-tenant SaaS structure with Netlify deployment and a Tailwind-based UI.
+The Oasis help desk was built for a single client, but the core product had value for any smart home integrator with clients who needed self-service support.
+
+## Solution
+
+Wrapped the knowledgebase in a SaaS structure, adding multi-tenancy support and a deployable product layer so the tool could serve multiple integrators and their clients.
+
+## Screenshots
+
+> *Add 2–4 screenshots here*
 
 ## Tech Stack
 
 - TypeScript
 - Vite
 - Tailwind CSS
-- Netlify (deployment)
+- Netlify
 
-## Getting Started
+## Features
 
-### Prerequisites
+- Multi-tenant architecture for serving multiple integrators
+- Knowledgebase and support article management
+- Mobile-first UI inherited from the core Oasis product
+- Netlify deployment with CSP configuration
 
-- Node.js 18+
-- npm
-
-### Installation
+## Installation
 
 ```bash
 npm install
-```
-
-### Development
-
-```bash
 npm run dev
 ```
 
-### Build
+## Lessons Learned
 
-```bash
-npm run build
-```
+- Transitioning a single-client tool to multi-tenant requires rethinking data boundaries early
+- SaaS pricing and access control are design decisions, not just engineering ones
+- Reusing a proven UI base (`oasis-help-desk`) accelerated development significantly
 
-## Project Structure
+## Future Improvements
 
-```
-src/         # Application source code
-public/      # Static assets
-CSP.md       # Content Security Policy documentation
-```
-
-## Deployment
-
-Deploys to Netlify automatically — see `netlify.toml` for configuration.
+- Stripe billing and subscription management
+- Admin dashboard for managing tenants and articles
+- Analytics on article views and search queries
 
 ## Related
 
-- [`oasis-help-desk`](https://github.com/nmswainston/oasis-help-desk) — the core knowledgebase product
+- [`oasis-help-desk`](https://github.com/nmswainston/oasis-help-desk) — the core product this is built on
 
 ---
 
